@@ -1,11 +1,37 @@
-.header {
+@import '../../styles/variables.less';
+
+.site-header {
     background-color: #89bf04;
-    .logo {
-        font-size: 1.5em;
-        font-weight: bold;
-        text-decoration: none;
-        background: transparent url(./Logo.png) no-repeat left center;
-        padding: 20px 0 20px 40px;
-        color: white;
+    padding: 14px;
+
+    .swagger-ui-wrap {
+        line-height: 1;
+        max-width: @base*240;
+        margin-left: auto;
+        margin-right: auto;
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            background: transparent url(./Logo.png) no-repeat left center;
+            padding: @base*5 0 @base*5 @base*10;
+            color: white;
+        }
+        .search-box {
+            display: block;
+            clear: none;
+            float: right;
+            margin: @base*2;
+
+            input {
+                font-size: 0.9em;
+                padding: 3px;
+                margin: 0;
+            }
+            input + input {
+                margin-left: @base*2;
+            }
+        }
     }
 }

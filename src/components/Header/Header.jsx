@@ -5,10 +5,25 @@ import * as HeaderLess from './Header.less';
 export default class Header extends Component {
     render () {
         return (
-            <div className="header">
-                <a className="logo" href="http://swagger.io">swagger</a>
-                <div><input type="text" placeholder="Search..." /></div>
-            </div>
+            <header className="site-header">
+                <div className="swagger-ui-wrap">
+                    <a className="logo" href="http://swagger.io" target="_blank">swagger</a>
+                    <div className="search-box">
+                        <form>
+                            <input
+                                type="text"
+                                placeholder="Type REST name here..."
+                                autoFocus
+                            />
+                            <input
+                                type="submit"
+                                value="Search"
+                                className="btn btn-success"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </header>
         )
     }
 }
