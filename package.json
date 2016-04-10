@@ -9,12 +9,14 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "css-loader": "^0.23.1",
     "es5-shim": "^4.5.8",
+    "less-loader": "^2.2.3",
     "lodash-es": "^4.9.0",
     "react": "^15.0.1",
     "react-addons-css-transition-group": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-router": "^2.0.1"
+    "react-router-component": "^0.32.0"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
@@ -27,8 +29,11 @@
     "babel-preset-stage-0": "^6.5.0",
     "del": "^2.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "less": "^2.6.1",
     "ncp": "^2.0.0",
     "react-bootstrap": "^0.28.5",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }

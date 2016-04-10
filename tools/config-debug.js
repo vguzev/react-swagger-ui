@@ -23,7 +23,7 @@ const appConfig = {
         hot: false,
         headers: {'Access-Control-Allow-Origin': '*'},
         proxy: {
-            '/rest/*': 'http://localhost:8080/rest'
+            '/rest/*': 'http://localhost:8081/rest'
         }
     },
     devtool: '#eval',
@@ -56,7 +56,7 @@ const appConfig = {
             },
             {
                 test: /\.less$/,
-                loader: ExtractTextPlugin.extract('css?sourceMap!less?sourceMap')
+                loader: 'style!css!less'
             },
             {
                 test: /\.css$/,
