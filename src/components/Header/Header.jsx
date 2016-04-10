@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-component';
 import * as HeaderLess from './Header.less';
+import { translate } from 'react-i18next';
 
-export default class Header extends Component {
+class Header extends Component {
     render () {
+        const { t } = this.props;
         return (
             <header className="site-header">
                 <div className="swagger-ui-wrap">
@@ -12,12 +14,12 @@ export default class Header extends Component {
                         <form>
                             <input
                                 type="text"
-                                placeholder="Type REST name here..."
+                                placeholder={t('common:Header.searchInputPlaceholder')}
                                 autoFocus
                             />
                             <input
                                 type="submit"
-                                value="Search"
+                                value={t('common:Header.searchButton')}
                                 className="btn btn-success"
                             />
                         </form>
@@ -27,3 +29,5 @@ export default class Header extends Component {
         )
     }
 }
+
+export default translate([])(Header);
