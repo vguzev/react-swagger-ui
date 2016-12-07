@@ -6,5 +6,6 @@ Sample Application: Swagger UI, written in React.js.
 ```
 git clone https://github.com/vguzev/react-swagger-ui.git
 cd react-swagger
+npm install
 npm start
 ```
