@@ -1,11 +1,11 @@
 # react-swagger-ui
-Sample Application: Swagger UI, written in React.js.
+Swagger UI, written in React.js (currently in development).
 
 ## Install
 
 ```
 git clone https://github.com/vguzev/react-swagger-ui.git
-cd react-swagger
-npm install
+cd react-swagger-ui
+npm run setup
 npm start
 ```
